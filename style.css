@@ -2,53 +2,73 @@
   padding: 0;
   margin: 0;
 }
+html{
+    background-color: #eee7c4;
+    width: 100%;
+}
+body{
+    
+}
 /* header section */
 header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
+  margin-bottom: 60px;
 }
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
   width: 100vh;
 }
+.outer-nav{
+    width: 100%;
+    background-color: #b18669;
+    padding-bottom: 15px;
+}
 .nav {
+  width: 85%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-left: 10%;
+  justify-items: center;
   padding-top: 20px;
-  padding-right: 20px;
 }
 .logo {
   width: 70px;
+  border-radius: 50%;
 }
 .talk {
+  margin-top: 5px;
   width: 100px;
-  height: 30px;
+  height: 45px;
   align-self: flex-end;
-  border-radius: 5px 0 5px 0;
+  border-radius: 15px 0 15px 0;
   border-width: 0.5px;
-  background-color: #551a8b;
+  background-color: #2e3e64;
   color: #fff;
   transition: width 1s ease-in;
+}
+.team-section-title{
+    text-align: center;
+    color: #2e3e64;
+    opacity: 0.6;
+    font-size: 1.8rem;
+    margin: 22px auto;
 }
 .talk:hover {
   width: 150px;
   background-color: #612896;
 }
 .header-content {
+    margin-top: 20px;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .header-content .title {
-  color: #000;
+  color: #111735;
+  font-size: 3.5rem;
   margin: 15px;
 }
 .header-content p {
@@ -57,17 +77,20 @@ header {
 }
 .header-content .para-1 {
   text-align: center;
+  font-size: 1.8rem;
 }
 .header-content .para-2 {
   width: 80%;
   align-items: center;
+  font-size: 1.4rem;
 }
 
 /* end header section */
 
 .team-section{
     display: flex;
-    width: 95vw;
+    width: 100%;
+    margin: 0 auto;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
@@ -78,6 +101,7 @@ header {
     height: 300px;
     text-align: center;
     margin-bottom: 3rem;
+
 }
 .flip{
     position: relative;
@@ -85,8 +109,10 @@ header {
     height: 100%;
     text-align: center;
     transition: transform 0.6s;
-    transform-style: preserve-3d;
-    
+    transform-style: preserve-3d; 
+    border-radius: 10px 15%;
+
+
 }
 .card:hover .flip{
     transform: rotateY(180deg);
@@ -97,6 +123,8 @@ header {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border-radius: 10px 15%;
+
 }
 .front-card{
     background-color: #bbb;
@@ -104,16 +132,21 @@ header {
 }
 .back{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
-    background-color: #2980b9;
-    color: white;
+    background-color: #b18669;
+    color: #091f4d;
+    border-radius: 10px 15%;
     transform: rotateY(180deg);
     border-radius: 10px 15%;
+}
+.link{
+    margin: 10px;
 }
 
 .card-image{
     width: 100%;
+    border-radius: 10px 15%;
     height: 100%;
     border-radius: 10px 15%;
 }
@@ -123,9 +156,8 @@ header {
 .data-form {
   display: flex;
   width: 80%;
-  justify-content: space-between;
-  margin:0 auto;
-  
+  margin: 40px auto;
+  justify-content: space-around;
 }
 
 .contact {
@@ -135,28 +167,23 @@ header {
 }
 
 .contact .p-one {
-  font-size: 40px;
+  font-size: 2rem;
+  color: #091f4d;
   width: 50%;
-
-  text-align: center;
+  text-align: left;
 }
 
 .contact .email {
   font-size: 20px;
-  padding: 30px;
+  margin-top: 15px;
 }
 
 .email span {
-  color: #8b8383;
+  color:#091f4d;
 }
 
 .contact .p-three {
   font-size: 20px;
-  margin: 0 0 0 30px;
-}
-
-.contact-link i {
-  margin: 0 0 0 30px;
 }
 
 .form-box {
@@ -192,18 +219,18 @@ textarea {
 }
 
 .sent {
-  width: 100px;
+  width: 80%;
   height: 30px;
-  align-self: flex-end;
+  align-self: center;
   border-radius: 5px 0 5px 0;
   border-width: 0.5px;
-  background-color: #551a8b;
+  background-color: #2e3e64;
   color: #fff;
-  transition: width 1s ease-in;
+  transition: width 0.5s ease-in;
 }
 
 .sent:hover {
-  width: 150px;
+  width: 100%;
   background-color: #612896;
 }
 ::placeholder {
@@ -232,6 +259,18 @@ textarea {
     margin: 0 0 0 30px;
     text-align: center;
   }
+  .team-section{
+    flex-direction: column;
 }
+.card{
+    width:80%;
+}
+
+.card:active .flip{
+    transform: rotateY(180deg);
+}
+
+}
+
 
 /* form style section */
