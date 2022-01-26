@@ -3,7 +3,7 @@
   margin: 0;
 }
 html{
-    background-color: #eee7c4;
+    background-color: #ddd ;
     width: 100%;
 }
 body{
@@ -18,11 +18,11 @@ header {
 }
 .container {
   position: relative;
-  width: 100vh;
+  
 }
 .outer-nav{
     width: 100%;
-    background-color: #b18669;
+    background-color: darkgray;
     padding-bottom: 15px;
 }
 .nav {
@@ -46,7 +46,7 @@ header {
   border-width: 0.5px;
   background-color: #2e3e64;
   color: #fff;
-  transition: width 1s ease-in;
+  transition: width 0.5s ease-in;
 }
 .team-section-title{
     text-align: center;
@@ -134,7 +134,7 @@ header {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-    background-color: #b18669;
+    background-color: darkgray;
     color: #091f4d;
     border-radius: 10px 15%;
     transform: rotateY(180deg);
