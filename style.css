@@ -1,4 +1,120 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
+
+/* form style section */
+
+.data-form {
+  display: flex;
+  width: 98%;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact .p-one {
+  font-size: 40px;
+  width: 50%;
+
+  text-align: center;
+}
+
+.contact .email {
+  font-size: 20px;
+  padding: 30px;
+}
+
+.email span {
+  color: #8b8383;
+}
+
+.contact .p-three {
+  font-size: 20px;
+  margin: 0 0 0 30px;
+}
+
+.contact-link i {
+  margin: 0 0 0 30px;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 33.3vh;
+}
+
+textarea {
+  resize: none;
+  width: 300px;
+  height: 35%;
+  padding: 5px;
+  border-radius: 10px 0 10px 0;
+  border-width: 0.5px;
+}
+
+.name {
+  padding: 5px;
+  width: 300px;
+  height: 20px;
+  border-radius: 10px 0 10px 0;
+  border-width: 0.5px;
+}
+
+.e-mail {
+  padding: 5px;
+  width: 300px;
+  height: 20px;
+  border-radius: 10px 0 10px 0;
+  border-width: 0.5px;
+}
+
+.sent {
+  width: 100px;
+  height: 30px;
+  align-self: flex-end;
+  border-radius: 5px 0 5px 0;
+  border-width: 0.5px;
+  background-color: #551a8b;
+  color: #fff;
+  transition: width 1s ease-in;
+}
+
+.sent:hover {
+  width: 150px;
+  background-color: #612896;
+}
+::placeholder {
+  color: #8b8383;
+}
+
+@media screen and (max-width: 600px) {
+  .data-form {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sent {
+    align-self: center;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contact .p-three {
+    font-size: 20px;
+    margin: 0 0 0 30px;
+    text-align: center;
+  }
+}
+
+/* form style section */
