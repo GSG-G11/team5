@@ -2,6 +2,68 @@
   padding: 0;
   margin: 0;
 }
+/* header section */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding-left: 10%;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.logo {
+  width: 70px;
+}
+.talk {
+  width: 100px;
+  height: 30px;
+  align-self: flex-end;
+  border-radius: 5px 0 5px 0;
+  border-width: 0.5px;
+  background-color: #551a8b;
+  color: #fff;
+  transition: width 1s ease-in;
+}
+.talk:hover {
+  width: 150px;
+  background-color: #612896;
+}
+.header-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-content .title {
+  color: #000;
+  margin: 15px;
+}
+.header-content p {
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+.header-content .para-1 {
+  text-align: center;
+}
+.header-content .para-2 {
+  width: 80%;
+  align-items: center;
+}
+
+/* end header section */
 
 .team-section{
     display: flex;
